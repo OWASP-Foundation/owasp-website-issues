@@ -1,0 +1,59 @@
+name: Website bug report
+description: Report a bug for the OWASP public website or a specialized project website
+title: "[Website Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a website bug. Please complete the required fields below so we can investigate quickly.
+  - type: input
+    id: site-area
+    attributes:
+      label: Website or project area
+      description: Which OWASP site or specialized project website is affected?
+      placeholder: www.owasp.org, project page, chapter site, etc.
+    validations:
+      required: true
+  - type: input
+    id: affected-url
+    attributes:
+      label: Affected URL
+      description: Provide the full URL where the issue occurs.
+      placeholder: https://owasp.org/...
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: What is the concern?
+      description: Describe the bug or problem you encountered.
+      placeholder: Tell us what is wrong and any relevant context.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the issue.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior or desired resolution
+      description: What did you expect to happen, or how should this work instead?
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or attachments
+      description: If possible, drag and drop screenshots or other files here to help illustrate the issue.
+      placeholder: Attach screenshots or paste additional details here.
