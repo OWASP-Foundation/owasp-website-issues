@@ -1,0 +1,53 @@
+name: Feature enhancement request
+description: Request an improvement to existing functionality or entirely new website functionality
+title: "[Feature Enhancement]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a feature enhancement request. Please provide the details below so we can evaluate and prioritize it.
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request type
+      description: Is this request for an improvement to something that already exists or for brand new functionality?
+      options:
+        - Improvement to existing functionality
+        - New functionality
+    validations:
+      required: true
+  - type: input
+    id: implementation-area
+    attributes:
+      label: Area for implementation
+      description: Where should this enhancement be implemented?
+      placeholder: Particular feature, front end UI, API, content workflow, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: request-details
+    attributes:
+      label: Requested improvement or new functionality
+      description: Describe the enhancement you want and any context that helps explain the need.
+      placeholder: Explain the improvement or new functionality you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: desired-end-state
+    attributes:
+      label: Desired end state or functionality
+      description: Describe how the feature should work when it is complete.
+      placeholder: Describe the end result you expect.
+    validations:
+      required: true
+  - type: textarea
+    id: test-step-suggestions
+    attributes:
+      label: Optional test step suggestions
+      description: If helpful, suggest steps that would demonstrate the enhancement is implemented correctly.
+      placeholder: |
+        1. Go to ...
+        2. Perform ...
+        3. Confirm ...
